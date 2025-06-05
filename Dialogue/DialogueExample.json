@@ -1,0 +1,55 @@
+{
+    "nodes": [
+        {
+            "id": "node1",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "있잖아, 저 하늘을 바라본적 있어? 저 하늘 위에는 수 많은 별들이 있잖아. 그 많은 별들 중에서 우리는 이곳에 있고 만날 수 있게 된거야. 같은 공간 속에서 이렇게 있는 것, 정말 신기하지 않아?",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "node2"
+        },
+        {
+            "id": "node2",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "인연이란 이렇게 수 많은 우연 속에서 생기는 거야.",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "node3"
+        },
+                {
+            "id": "node3",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "그러니깐 그 인연을 소중히 여겨.",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "node4"
+        }
+    ]
+}
