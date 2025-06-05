@@ -18,9 +18,6 @@ struct FCharacterSetting
 
 	UPROPERTY(BlueprintReadOnly)
 	UTexture2D* CharacterImage;
-
-	UPROPERTY(BlueprintReadOnly)
-	bool bIsSpeaking;
 	
 };
 
@@ -31,6 +28,9 @@ struct FTextDialogueInfo
 
 	UPROPERTY(BlueprintReadOnly)
 	TArray<FCharacterSetting> CharacterSettings;
+
+	UPROPERTY(BlueprintReadOnly)
+	FText SpeakerName;
 	
 	UPROPERTY(BlueprintReadOnly)
 	FText DialogueText;
