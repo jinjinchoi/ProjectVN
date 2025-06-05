@@ -56,3 +56,15 @@ struct FTextDialogueInfo
 	bool bIsValid = true;
 	
 };
+
+
+struct FChoiceNodeInfo
+{
+	
+	TSet<FName> RequiredNodes = TSet<FName>();
+	int32 RequiredAffection = 0;
+	FText ChoiceText;
+	int32 AffectionGain = 0;
+	FName NextNodeId;
+	
+};

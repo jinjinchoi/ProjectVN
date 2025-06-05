@@ -34,7 +34,7 @@
             "cutScene": "None",
             "nextNodeId": "node3"
         },
-                {
+        {
             "id": "node3",
             "type": "dialogue",
             "speakerId": "Eunha",
@@ -49,7 +49,34 @@
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
-            "nextNodeId": "node4"
+            "nextNodeId": "choice1"
+        },
+        {
+            "id": "choice1",
+            "type": "choice",
+            "choices": [
+                {
+                    "requiredNodes": [],
+                    "requiredAffection": 0,
+                    "choiceText": "인연이라... 그것은 정말 우연일까? 아니면 정해진 운명일까?",
+                    "affectionGain": 0,
+                    "nextNodeId": "node4-1"
+                },
+                {
+                    "requiredNodes": [],
+                    "requiredAffection": 0,
+                    "choiceText": "그 어떤 인연이라도 난 결코 헛되게 보내지 않겠어.",
+                    "affectionGain": 5,
+                    "nextNodeId": "node4-2"
+                },
+                {
+                    "requiredNodes": [],
+                    "requiredAffection": 0,
+                    "choiceText": "인연이라고? 그런 건 다 부질없는 거야.",
+                    "affectionGain": -5,
+                    "nextNodeId": "node4-3"
+                }
+            ]
         }
     ]
 }
