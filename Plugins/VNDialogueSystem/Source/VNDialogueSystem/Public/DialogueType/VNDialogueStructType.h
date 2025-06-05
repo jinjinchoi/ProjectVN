@@ -11,13 +11,13 @@ struct FCharacterSetting
 	GENERATED_BODY()
 	
 	UPROPERTY(BlueprintReadOnly)
-	FText CharacterName;
-	
-	UPROPERTY(BlueprintReadOnly)
 	EDialoguePosition DialoguePosition;
 
 	UPROPERTY(BlueprintReadOnly)
 	UTexture2D* CharacterImage;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool bIsSpeaking;
 	
 };
 
@@ -25,6 +25,13 @@ USTRUCT(BlueprintType)
 struct FTextDialogueInfo
 {
 	GENERATED_BODY()
+
+	FTextDialogueInfo() {}
+
+	explicit FTextDialogueInfo(const bool InIsValid)
+	{
+		bIsValid = InIsValid;
+	}
 
 	UPROPERTY(BlueprintReadOnly)
 	TArray<FCharacterSetting> CharacterSettings;
@@ -45,5 +52,7 @@ struct FTextDialogueInfo
 	TSoftObjectPtr<UTexture2D> CutScene;
 	
 	FName NextNodeId;
+
+	bool bIsValid = true;
 	
 };
