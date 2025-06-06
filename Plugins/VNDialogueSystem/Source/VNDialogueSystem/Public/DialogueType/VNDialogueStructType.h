@@ -57,14 +57,27 @@ struct FTextDialogueInfo
 	
 };
 
-
+USTRUCT(BlueprintType)
 struct FChoiceNodeInfo
 {
+	GENERATED_BODY()
 	
 	TSet<FName> RequiredNodes = TSet<FName>();
 	int32 RequiredAffection = 0;
-	FText ChoiceText;
+
+	UPROPERTY(BlueprintReadOnly)
+	FName RelatedCharacterId = FName();
+
+	UPROPERTY(BlueprintReadOnly)
+	FText ChoiceText = FText();
+
+	UPROPERTY(BlueprintReadOnly)
 	int32 AffectionGain = 0;
-	FName NextNodeId;
+
+	UPROPERTY(BlueprintReadOnly)
+	FName NextNodeId = FName();
+
+	UPROPERTY(BlueprintReadOnly)
+	bool bIsConditionMet = true;
 	
 };
