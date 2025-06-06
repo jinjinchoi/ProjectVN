@@ -57,8 +57,9 @@
             "choices": [
                 {
                     "requiredNodes": [],
-                    "requiredAffection": 0,
+                    "requiredAffection": 10,
                     "choiceText": "인연이라... 그것은 정말 우연일까? 아니면 정해진 운명일까?",
+                    "relatedCharacterId": "Eunha",
                     "affectionGain": 0,
                     "nextNodeId": "node4-1"
                 },
@@ -66,6 +67,7 @@
                     "requiredNodes": [],
                     "requiredAffection": 0,
                     "choiceText": "그 어떤 인연이라도 난 결코 헛되게 보내지 않겠어.",
+                    "relatedCharacterId": "Eunha",
                     "affectionGain": 5,
                     "nextNodeId": "node4-2"
                 },
@@ -73,10 +75,62 @@
                     "requiredNodes": [],
                     "requiredAffection": 0,
                     "choiceText": "인연이라고? 그런 건 다 부질없는 거야.",
+                    "relatedCharacterId": "Eunha",
                     "affectionGain": -5,
                     "nextNodeId": "node4-3"
                 }
             ]
+        },
+        {
+            "id": "node4-1",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "그건 알 수 없어. 그렇지만 모든 인연은 소중한 거야.",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "choice1"
+        },
+        {
+            "id": "node4-2",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "모든 인연을 소중히 간직하길 바라",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "choice1"
+        },
+        {
+            "id": "node4-3",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "그래... 마음대로 생각해",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "choice1"
         }
     ]
 }
