@@ -96,7 +96,7 @@
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
-            "nextNodeId": "choice1"
+            "nextNodeId": "condition1"
         },
         {
             "id": "node4-2",
@@ -113,7 +113,7 @@
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
-            "nextNodeId": "choice1"
+            "nextNodeId": "condition1"
         },
         {
             "id": "node4-3",
@@ -130,7 +130,50 @@
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
-            "nextNodeId": "choice1"
+            "nextNodeId": "condition1"
+        },
+        {
+            "id": "condition1",
+            "type": "condition",
+            "requiredNodes": ["node4-3"],
+            "relatedCharacterId": "Eunha",
+            "requiredAffection": 0,
+            "trueNodeId": "node5-1",
+            "falseNodeId": "node5-2"
+        },
+        {
+            "id": "node5-1",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "흥. 너랑 안 놀아",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "node1"
+        },
+        {
+            "id": "node5-2",
+            "type": "dialogue",
+            "speakerId": "Eunha",
+            "dialogue": "있지. 더 이상 쓸 말이 없데. 그나마 다행인건 노드 종류가 이게 다라서 더이상 대화를 안써도 된다는 거야.",
+            "characterSettings": [
+                {
+                    "characterId": "Eunha",
+                    "expression": "Neutral",
+                    "position": "Center"
+                }
+            ],
+            "BGImage": "Test",
+            "BGM": "None",
+            "cutScene": "None",
+            "nextNodeId": "node1"
         }
     ]
 }

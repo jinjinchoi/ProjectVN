@@ -81,3 +81,17 @@ struct FChoiceNodeInfo
 	bool bIsConditionMet = true;
 	
 };
+
+struct FConditionNodeInfo
+{
+	FConditionNodeInfo() {}
+	explicit FConditionNodeInfo(const bool InbIsValid) { bIsValid = InbIsValid; }
+	
+	TSet<FName> RequiredNodes = TSet<FName>();
+	int32 RequiredAffection = 0;
+	FName RelatedCharacterId = NAME_None; 
+	FName TrueNodeId = NAME_None;
+	FName FalseNodeId = NAME_None;
+
+	bool bIsValid = true;
+};
