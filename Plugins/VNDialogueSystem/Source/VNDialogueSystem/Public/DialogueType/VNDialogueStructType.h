@@ -42,9 +42,12 @@ struct FTextDialogueInfo
 	UPROPERTY(BlueprintReadOnly)
 	FText DialogueText;
 
-	UPROPERTY(BlueprintReadOnly)
-	TSoftObjectPtr<USoundBase> BGM;
+	bool bPlaySFX = false;
+	TSoftObjectPtr<USoundBase> SoundEffect;
 
+	bool bPlayBGM = false;
+	TSoftObjectPtr<USoundBase> BGM;
+	
 	UPROPERTY(BlueprintReadOnly)
 	TSoftObjectPtr<UTexture2D> BGImage;
 

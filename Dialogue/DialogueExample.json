@@ -12,6 +12,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
@@ -29,8 +30,9 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
-            "BGM": "None",
+            "BGM": "Test",
             "cutScene": "None",
             "nextNodeId": "node3"
         },
@@ -46,6 +48,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
@@ -93,6 +96,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
@@ -110,6 +114,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
@@ -127,6 +132,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
@@ -153,6 +159,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
@@ -170,6 +177,7 @@
                     "position": "Center"
                 }
             ],
+            "soundEffect": "None",
             "BGImage": "Test",
             "BGM": "None",
             "cutScene": "None",
