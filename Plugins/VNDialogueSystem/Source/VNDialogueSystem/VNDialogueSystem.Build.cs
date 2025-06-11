@@ -26,6 +26,7 @@ public class VNDialogueSystem : ModuleRules
 			new string[]
 			{
 				"Core",
+				"SharedTypes",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
