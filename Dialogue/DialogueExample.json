@@ -182,6 +182,16 @@
             "BGM": "None",
             "cutScene": "None",
             "nextNodeId": "node1"
+        },
+        {
+            "id": "mini1",
+            "type": "miniGame",
+            "miniGameType": "Combat",
+            "level": 1,
+            "nodeIdAfterClear": "node1"
         }
-    ]
+    ],
+    "meta" : {
+        "chapterName": "1. 우연한 만남"
+    }
 }
