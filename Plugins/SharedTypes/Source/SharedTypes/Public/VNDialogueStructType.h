@@ -29,10 +29,8 @@ struct FTextDialogueInfo
 	FTextDialogueInfo() {}
 
 	explicit FTextDialogueInfo(const bool InIsValid)
-	{
-		bIsValid = InIsValid;
-	}
-
+		: bIsValid(InIsValid) {}
+	
 	UPROPERTY(BlueprintReadOnly)
 	TArray<FCharacterSetting> CharacterSettings;
 
@@ -53,8 +51,13 @@ struct FTextDialogueInfo
 
 	UPROPERTY(BlueprintReadOnly)
 	TSoftObjectPtr<UTexture2D> CutScene;
+
+	EDialogueCutScene CutSceneEnum;
 	
 	FName NextNodeId;
+
+	UPROPERTY(BlueprintReadOnly)
+	FString ChapterName;
 
 	bool bIsValid = true;
 	
@@ -88,7 +91,8 @@ struct FChoiceNodeInfo
 struct FConditionNodeInfo
 {
 	FConditionNodeInfo() {}
-	explicit FConditionNodeInfo(const bool InbIsValid) { bIsValid = InbIsValid; }
+	explicit FConditionNodeInfo(const bool InbIsValid)
+		: bIsValid(InbIsValid) {}
 	
 	TSet<FName> RequiredNodes = TSet<FName>();
 	int32 RequiredAffection = 0;
@@ -97,4 +101,17 @@ struct FConditionNodeInfo
 	FName FalseNodeId = NAME_None;
 
 	bool bIsValid = true;
+};
+
+struct FMiniGameNodeInfo
+{
+	FMiniGameNodeInfo() {}
+	explicit FMiniGameNodeInfo(const bool InbIsValid)
+		: bIsValid(InbIsValid) {}
+	
+	TSoftObjectPtr<UWorld> MiniGameMap = nullptr;
+	FName NodeIdAfterClear = NAME_None;
+
+	bool bIsValid = true;
+	
 };
