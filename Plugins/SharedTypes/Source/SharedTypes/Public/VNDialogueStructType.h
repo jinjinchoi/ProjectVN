@@ -57,7 +57,7 @@ struct FTextDialogueInfo
 	FName NextNodeId;
 
 	UPROPERTY(BlueprintReadOnly)
-	FString ChapterName;
+	FText ChapterName;
 
 	bool bIsValid = true;
 	
