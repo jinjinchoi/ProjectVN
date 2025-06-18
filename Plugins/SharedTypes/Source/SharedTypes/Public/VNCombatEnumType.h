@@ -6,6 +6,10 @@ UENUM(BlueprintType)
 enum class EVNAbilityType : uint8
 {
 	None,
+	Move,
+	Look,
+	Jump,
+	
 	NormalAttack,
 	HeavyAttack,
 	Dodge
