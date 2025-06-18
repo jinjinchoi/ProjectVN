@@ -26,6 +26,7 @@ public class VNMiniGame : ModuleRules
 			new string[]
 			{
 				"Core",
+				"SharedTypes",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -36,8 +37,8 @@ public class VNMiniGame : ModuleRules
 			{
 				"CoreUObject",
 				"Engine",
-				"Slate",
-				"SlateCore",
+				"InputCore",
+				"EnhancedInput",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

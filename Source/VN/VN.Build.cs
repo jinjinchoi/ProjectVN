@@ -8,9 +8,21 @@ public class VN : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "SharedTypes" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", 
+			"CoreUObject", 
+			"Engine", 
+			"InputCore", 
+			"EnhancedInput", 
+			"SharedTypes"
+		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "VNDialogueSystem" });
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
+			"VNDialogueSystem",
+			"VNMiniGame"
+		});
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

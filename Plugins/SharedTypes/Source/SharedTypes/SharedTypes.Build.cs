@@ -35,9 +35,7 @@ public class SharedTypes : ModuleRules
 			new string[]
 			{
 				"CoreUObject",
-				"Engine",
-				"Slate",
-				"SlateCore",
+				"Engine"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
