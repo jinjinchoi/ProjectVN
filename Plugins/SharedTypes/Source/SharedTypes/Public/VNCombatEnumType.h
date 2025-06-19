@@ -14,3 +14,14 @@ enum class EVNAbilityType : uint8
 	HeavyAttack,
 	Dodge
 };
+
+UENUM(BlueprintType)
+enum class EAttackNotifyType : uint8
+{
+	None,
+	RightHand,
+	LeftHand,
+	RightLeg,
+	LeftLeg,
+	
+};
