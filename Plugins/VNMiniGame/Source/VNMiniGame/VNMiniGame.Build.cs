@@ -39,6 +39,7 @@ public class VNMiniGame : ModuleRules
 				"Engine",
 				"InputCore",
 				"EnhancedInput",
+				"MotionWarping"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
