@@ -12,7 +12,10 @@ enum class EVNAbilityType : uint8
 	
 	NormalAttack,
 	HeavyAttack,
-	Dodge
+	Dodge,
+
+	Hit,
+	Death
 };
 
 UENUM(BlueprintType)
