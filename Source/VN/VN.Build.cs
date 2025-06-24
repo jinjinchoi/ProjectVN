@@ -15,7 +15,8 @@ public class VN : ModuleRules
 			"Engine", 
 			"InputCore", 
 			"EnhancedInput", 
-			"SharedTypes"
+			"SharedTypes",
+			"AIModule"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]

@@ -27,6 +27,7 @@ public class VNMiniGame : ModuleRules
 			{
 				"Core",
 				"SharedTypes",
+				"AIModule",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -40,7 +41,8 @@ public class VNMiniGame : ModuleRules
 				"InputCore",
 				"EnhancedInput",
 				"MotionWarping",
-				"UMG"
+				"UMG",
+				"AnimGraphRuntime"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
