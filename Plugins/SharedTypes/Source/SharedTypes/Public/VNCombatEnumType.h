@@ -12,6 +12,7 @@ enum class EVNAbilityType : uint8
 	
 	NormalAttack,
 	HeavyAttack,
+	QSkill,
 	Dodge,
 
 	Hit,
