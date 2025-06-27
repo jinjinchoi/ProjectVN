@@ -27,5 +27,6 @@ enum class EAttackNotifyType : uint8
 	RightLeg,
 	LeftLeg,
 	Weapon,
+	EndAttack
 	
 };
