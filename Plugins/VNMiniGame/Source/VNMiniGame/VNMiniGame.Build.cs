@@ -42,7 +42,9 @@ public class VNMiniGame : ModuleRules
 				"EnhancedInput",
 				"MotionWarping",
 				"UMG",
-				"AnimGraphRuntime", "Niagara"
+				"AnimGraphRuntime",
+				"Niagara",
+				"NavigationSystem"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
