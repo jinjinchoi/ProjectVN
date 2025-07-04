@@ -5,6 +5,7 @@ const path = require('path');
 const EXCEL_DIR = './chapters';
 const OUTPUT_DIR = './output';
 
+// 캐릭터 설정
 function buildCharacterSettings(row) {
     const settings = [];
     for (let i = 1; i <=3; i++) {
@@ -40,6 +41,7 @@ function convertWorkbook(filePath, chapterName) {
     const choicesSheet = xlsx.utils.sheet_to_json(workbook.Sheets['Choices'] || {});
     const conditionsSheet = xlsx.utils.sheet_to_json(workbook.Sheets['Conditions'] || {});
     const miniGameSheet = xlsx.utils.sheet_to_json(workbook.Sheets['MiniGame'] || {});
+    const endSheet = xlsx.utils.sheet_to_json(workbook.Sheets['End'] || {});
 
     const result = {
         nodes: [],
@@ -115,6 +117,7 @@ function convertWorkbook(filePath, chapterName) {
         }
     }
 
+    // MiniGame 시트 처리
     for (const row of miniGameSheet) {
         const node = {
             id: row.nodeId,
@@ -131,6 +134,22 @@ function convertWorkbook(filePath, chapterName) {
         } else {
             result.nodes.push(node);
         }
+    }
+
+    // end 시트 처리
+    for (const row of endSheet) {
+        const node = {
+            id: row.nodeId,
+            type: "end"
+        }
+
+        const existingNode = result.nodes.find(n => n.id == node.id);
+        if (existingNode) {
+            Object.assign(existingNode, node);
+        } else {
+            result.nodes.push(node);
+        }
+
     }
 
     return result;
