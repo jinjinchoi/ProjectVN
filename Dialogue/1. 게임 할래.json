@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "있잖아, 저 하늘을 바라본적 있어?",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "Test",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "node2"
+    },
+    {
+      "id": "node2",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "인연이란 이렇게 수 많은 우연 속에서 생기는 거야.",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "Test",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "node3"
+    },
+    {
+      "id": "node3",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "그건 그렇고 게임하나 할래?",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "Test",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "choice1"
+    },
+    {
+      "id": "node4",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "흥. 너랑 안놀아.",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "Test",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "node1"
+    },
+    {
+      "id": "clear1",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "게임 클리어? 대단한데?",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "Test",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "node1"
+    },
+    {
+      "id": "fail1",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "졌다고 너무 상심하지마. 원래 게임이라는 건 이기기도 하고 지기도 하는 거니깐",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "Test",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "node1"
+    },
+    {
+      "id": "choice1",
+      "type": "choice",
+      "choices": [
+        {
+          "choiceText": "게임? 좋아.",
+          "requiredNodes": [],
+          "requiredAffection": 0,
+          "relatedCharacterId": "Eunha",
+          "affectionGain": 10,
+          "nextNodeId": "mini1"
+        },
+        {
+          "choiceText": "난 게임은 싫어해서...",
+          "requiredNodes": [],
+          "requiredAffection": 0,
+          "relatedCharacterId": "Eunha",
+          "affectionGain": 0,
+          "nextNodeId": "node4"
+        }
+      ]
+    },
+    {
+      "id": "condition1",
+      "type": "condition",
+      "requiredNodes": [
+        "mini1"
+      ],
+      "requiredAffection": 0,
+      "relatedCharacterId": null,
+      "trueNodeId": "clear1",
+      "falseNodeId": "fail1"
+    },
+    {
+      "id": "mini1",
+      "type": "miniGame",
+      "miniGameType": "Combat",
+      "level": 1,
+      "nodeIdAfterClear": "clear1"
+    }
+  ],
+  "meta": {
+    "chapterName": "1. 게임 할래"
+  }
+}

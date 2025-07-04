@@ -108,7 +108,8 @@ struct FMiniGameNodeInfo
 	FMiniGameNodeInfo() {}
 	explicit FMiniGameNodeInfo(const bool InbIsValid)
 		: bIsValid(InbIsValid) {}
-	
+
+	FName MiniGameName = NAME_None;
 	TSoftObjectPtr<UWorld> MiniGameMap = nullptr;
 	FName NodeIdAfterClear = NAME_None;
 
