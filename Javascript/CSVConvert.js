@@ -124,6 +124,7 @@ function convertWorkbook(filePath, chapterName) {
             type: 'miniGame',
             miniGameType: row.miniGameType,
             level: parseInt(row.level) || 0,
+            miniGameName: row.miniGameName,
             nodeIdAfterClear: row.nodeIdAfterClear
         }
 

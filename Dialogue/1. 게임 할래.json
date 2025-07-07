@@ -134,7 +134,7 @@
       "id": "condition1",
       "type": "condition",
       "requiredNodes": [
-        "mini1"
+        "CombatGame_1"
       ],
       "requiredAffection": 0,
       "relatedCharacterId": null,
@@ -146,7 +146,8 @@
       "type": "miniGame",
       "miniGameType": "Combat",
       "level": 1,
-      "nodeIdAfterClear": "clear1"
+      "miniGameName": "CombatGame_1",
+      "nodeIdAfterClear": "condition1"
     }
   ],
   "meta": {
