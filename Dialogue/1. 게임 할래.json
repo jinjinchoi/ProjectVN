@@ -109,6 +109,69 @@
       "nextNodeId": "node1"
     },
     {
+      "type": "dialogue",
+      "characterSettings": [],
+      "soundEffect": "None",
+      "BGImage": "None",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "combat2"
+    },
+    {
+      "id": "combat1",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "기본적인 조작 방법이야. WASD나 방향키로 움직이고 마우스 왼쪽 버튼이 공격!",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "None",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "combat2"
+    },
+    {
+      "id": "combat2",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "스킬을 사용하면 강력한 공격을 할 수 있어. 마력은 일반 공격으로 적을 공격하면 회복이 돼.",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "None",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "combat3"
+    },
+    {
+      "id": "combat3",
+      "type": "dialogue",
+      "speakerId": "Eunha",
+      "dialogue": "그럼 이제 적들을 물리쳐봐!",
+      "characterSettings": [
+        {
+          "characterId": "Eunha",
+          "expression": "Neutral",
+          "position": "Center"
+        }
+      ],
+      "soundEffect": "None",
+      "BGImage": "None",
+      "BGM": "None",
+      "cutScene": "None",
+      "nextNodeId": "end01"
+    },
+    {
       "id": "choice1",
       "type": "choice",
       "choices": [
@@ -148,6 +211,10 @@
       "level": 1,
       "miniGameName": "CombatGame_1",
       "nodeIdAfterClear": "condition1"
+    },
+    {
+      "id": "end01",
+      "type": "end"
     }
   ],
   "meta": {
