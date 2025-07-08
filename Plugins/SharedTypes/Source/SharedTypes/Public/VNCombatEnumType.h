@@ -9,6 +9,8 @@ enum class EVNAbilityType : uint8
 	Move,
 	Look,
 	Jump,
+
+	OpenMenu,
 	
 	NormalAttack,
 	HeavyAttack,
