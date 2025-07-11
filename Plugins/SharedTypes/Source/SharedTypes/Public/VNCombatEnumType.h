@@ -33,3 +33,4 @@ enum class EAttackNotifyType : uint8
 	EndAttack
 	
 };
+

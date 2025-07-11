@@ -28,6 +28,7 @@ public class VNMiniGame : ModuleRules
 				"Core",
 				"SharedTypes",
 				"AIModule",
+				"ChaosVehicles",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
